@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="index-container">
+  <!-- 轮播图 -->
+  <view class="swiper-image">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="index">
+            <swiper-item>
+                <image class="slide-image" src="{{item}}" width="355" height="150">
+                </image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+  <!-- 搜索框 -->
+  <view class="search-container" >
+      <view class="search-wrapper">
+          <view class="address-wrapper">
+              <text>武汉</text>
+              <image class="drop-down" src="../../img/address_down.png"></image>
+          </view>
+          <view class="line-small"></view>
+          <view class="input-wrapper">
+              <image src='../../img/search-icon.png' class="search-icon"></image>
+              <input placeholder="搜索你想要的车" />
+          </view>
+      </view>
+  </view>
+  <!-- 四个图标 -->
+  <view class="icon_list">
+      <view>
+          <image src="../../img/add-icon.png" class="title_image"></image>
+          <text>我要买车</text>
+      </view>
+       <view>
+          <image class="title_image" src="../../img/add-icon.png"></image>
+          <text>免费估价</text>
+      </view>
+       <view>
+           <image class="title_image" src="../../img/add-icon.png"></image>
+          <text>我要贷款</text>
+      </view>
+       <view>
+           <image class="title_image" src="../../img/add-icon.png"></image>
+          <text>一成购车</text>
+      </view>
+  </view>
+  <!-- 分割线 -->
+  <view class="line"></view>
+  <!-- 商品筛选列表 -->
+  <view class="select-wrapper">
+      <view class="item_wrapper">
+          <text class="order">排序</text>
+           <image class="drop-down" src="../../img/down-icon.png"></image>
+      </view>
+      <view class="line-small"></view>
+       <view class="item_wrapper">
+          <text class="brand">品牌</text>
+          <image class="drop-down" src="../../img/down-icon.png"></image>
+      </view>
+      <view class="line-small"></view>
+       <view class="item_wrapper">
+          <text class="price">价格</text>
+           <image class="drop-down" src="../../img/down-icon.png"></image>
+      </view>
+      <view class="line-small"></view>
+       <view class="item_wrapper">
+          <text class="chose">筛选</text>
+           <image class="drop-down" src="../../img/down-icon.png"></image>
+      </view>
+  </view>
+  <view class="operate_wrapper">
+      <view bindtap="calling">
+          <image src="../../img/dianhua.png" />
+      </view>
+      <view>
+          <image src="../../img/kefu.png" />
+      </view>
+      <view>
+          <image src="../../img/shoucang.png" />
+           <text class="numCollection">0</text>
+      </view>
+  </view>
+    <!--商品列表-->
+    <view class="good_wrapper" wx:for="{{usedList}}" wx:key="{{index}}">
+        <view class="img_wrapper">
+            <image src="https://api.miaoche168.com/{{item.imgUrl}}" class=""></image>
+        </view>
+        <view class="info_wrapper">
+            <view class="good_name">
+                <view>{{item.brand}}</view>
+                <text>一成购</text>
+            </view>
+            <view class="old">{{item.type}}</view>
+            <view class="address-good">
+                <text>{{item.basic.data.carModal}}</text>
+                <text>{{item.basic.data.registrationTime}}年</text>
+                <text>{{item.basic.data.mileage/10000}}万公里</text>
+            </view>
+            <view class="price_info">
+                <text>首付</text>
+                <text>{{item.firPrice/10000}}</text>
+                <text>万</text>
+                <text>月供  {{item.monthly}}  元</text>
+            </view>
+        </view>
+    </view>
+</view>

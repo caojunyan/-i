@@ -1,0 +1,121 @@
+.title{
+    width: 100%;
+    text-align: center;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+}
+.good_wrapper {
+    width: 100%;
+    height: 218rpx;
+    border-top: 1px solid #F9F9F9;
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+    display: flex;
+    padding-top: 14rpx;
+}
+
+.img_wrapper {
+    width: 262rpx;
+    height: 160rpx;
+    background: #ddd;
+}
+
+.img_wrapper>image {
+    width: 100%;
+    height: 100%;
+}
+
+.info_wrapper {
+    width: 400rpx;
+    padding-left: 24rpx;
+    height: 160rpx;
+}
+
+.good_name {
+    width: 100%;
+    line-height: 40rpx;
+}
+
+.good_name>view {
+    font-family: PingFangSC-Semibold;
+    font-size: 30rpx;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 30rpx;
+    text-align: left;
+    display: inline-block;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300rpx;
+}
+
+.good_name>text {
+    border: 1rpx solid #f35a24;
+    border-radius: 4rpx;
+    width: 82rpx;
+    height: 28rpx;
+    font-family: PingFangSC-Semibold;
+    font-size: 20rpx;
+    color: #ff703e;
+    letter-spacing: 0;
+    text-align: left;
+    position: relative;
+    top: -5rpx;
+}
+
+.old {
+    font-family: PingFangSC-Semibold;
+    font-size: 30rpx;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 30rpx;
+    text-align: left;
+    display: inline-block;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 364rpx;
+    line-height: 1;
+}
+
+.address-good {
+    line-height: 30rpx;
+}
+
+.address-good>text {
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #a6b1c2;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: 10rpx;
+}
+
+.address-good>text:nth-child(1) {
+    margin-left: 0;
+}
+
+.price_info {
+    font-family: PingFangSC-Semibold;
+    font-size: 24rpx;
+    color: #ff8800;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 44rpx;
+}
+
+.price_info>text {
+    margin-left: 10rpx;
+}
+
+.price_info>text:nth-child(1) {
+    margin-left: 0;
+}
+
+.price_info>text:nth-child(2) {
+    font-size: 30rpx;
+}

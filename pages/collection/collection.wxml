@@ -1,0 +1,72 @@
+<view class="collection">
+    <!-- <view class="title">你喜欢的全都在这里</view> -->
+     <view class="good_wrapper">
+        <view class="img_wrapper">
+            <image class src="../../img/add-icon.png"></image>
+        </view>
+        <view class="info_wrapper">
+            <view class="good_name">
+                <view>东风风行 景逸X5景逸X5景逸X5景逸X5</view>
+                <text>一成购</text>
+            </view>
+            <view class="old">2014款 1.6L AMT豪华型AMT豪华型AMT豪华型AMT豪华型</view>
+            <view class="address-good">
+                <text>武汉</text>
+                <text>2014年06月</text>
+                <text>1.26万公里</text>
+            </view>
+            <view class="price_info">
+                <text>首付</text>
+                <text>1.90</text>
+                <text>万</text>
+                <text>月供1223元</text>
+            </view>
+        </view>
+    </view>
+     <view class="good_wrapper">
+        <view class="img_wrapper">
+            <image class src="../../img/add-icon.png"></image>
+        </view>
+        <view class="info_wrapper">
+            <view class="good_name">
+                <view>东风风行 景逸X5景逸X5景逸X5景逸X5</view>
+                <text>一成购</text>
+            </view>
+            <view class="old">2014款 1.6L AMT豪华型AMT豪华型AMT豪华型AMT豪华型</view>
+            <view class="address-good">
+                <text>武汉</text>
+                <text>2014年06月</text>
+                <text>1.26万公里</text>
+            </view>
+            <view class="price_info">
+                <text>首付</text>
+                <text>1.90</text>
+                <text>万</text>
+                <text>月供1223元</text>
+            </view>
+        </view>
+    </view>
+     <view class="good_wrapper">
+        <view class="img_wrapper">
+            <image class src="../../img/add-icon.png"></image>
+        </view>
+        <view class="info_wrapper">
+            <view class="good_name">
+                <view>东风风行 景逸X5景逸X5景逸X5景逸X5</view>
+                <text>一成购</text>
+            </view>
+            <view class="old">2014款 1.6L AMT豪华型AMT豪华型AMT豪华型AMT豪华型</view>
+            <view class="address-good">
+                <text>武汉</text>
+                <text>2014年06月</text>
+                <text>1.26万公里</text>
+            </view>
+            <view class="price_info">
+                <text>首付</text>
+                <text>1.90</text>
+                <text>万</text>
+                <text>月供1223元</text>
+            </view>
+        </view>
+    </view>
+</view>

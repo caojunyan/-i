@@ -1,0 +1,65 @@
+<view class="valuation">
+    <!-- banner图 -->
+    <view class="banner_wrapper">
+        <image src="../../img/banner.png"></image>
+    </view>
+    <!-- title -->
+    <view class="title_wrapper">
+        <text>靠谱的汽车抵押贷款了解一下！！</text>
+        <view>
+            了解详情
+            <image src="../../img/down-icon.png"></image>
+        </view>
+    </view>
+    <!-- city -->
+    <view class="city_wrapper">
+        <view class="sale_city">
+            <view class="city-title">卖车城市</view>
+            <picker mode="region" bindchange="bindRegionChangeSaleCity" value="{{saleregion}}" custom-item="{{customItem}}">
+                <view class="chose-result">
+                    <text class="picker">{{saleregion[2]}}</text>
+                    <image src="../../img/down-icon.png"></image>
+                </view>
+             </picker>
+        </view>
+         <view class="reg_city">
+            <view  class="city-title">上牌城市</view>
+             <picker mode="region" bindchange="bindRegionChangeRegCity" value="{{regregion}}" custom-item="{{customItem}}">
+                <view  class="chose-result">
+                    <text>{{regregion[2]}}</text>
+                    <image src="../../img/down-icon.png"></image>
+                </view>
+            </picker>
+        </view>
+    </view>
+    <!-- 上牌时间 -->
+    <view class="select-wrapper">
+        <view class="text">上牌时间</view>
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="select picker">
+            {{time}}
+            </view>   
+        </picker>
+    </view>
+    <!-- 品牌车系 -->
+     <view class="select-wrapper">
+        <view class="text">品牌车系</view>
+         <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="select picker">
+            {{array[index]}}
+            </view>   
+        </picker>
+    </view>
+    <!-- 行驶里程 -->
+     <view class="select-wrapper">
+        <view class="text">行驶里程</view>
+            <view class="select mile">
+                <input type="text" placeholder="请输入行驶里程"/>
+                <text>万公里</text>
+            </view>   
+    </view>
+    <!-- button -->
+    <view class="button_wrapper">
+        <view class="button">估个价先</view>
+    </view>
+</view>
